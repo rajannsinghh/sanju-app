@@ -1,0 +1,314 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Urbanist';
+    box-sizing: border-box;
+}
+.navbar-brand{
+    font-size: 25px;
+    font-family: "Allura";
+    color: white;
+}
+
+.navbar-brand:hover{
+    color: orange;
+}
+.navbar{
+    width: 100%;
+    height: 4.5rem;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+}
+.nav-link{
+    color: white;
+    width: 100%;
+    margin: 1.1rem;
+    font-family: sans-serif;
+}
+.nav-link:hover{
+    color: orange;
+}
+#navbarSupportedContent{
+    height: 5rem;
+    width: 100%;
+    margin-left: 3rem;
+}
+.box img{
+    padding-bottom: 15px;
+}
+
+
+.bag a{
+    text-decoration: none;
+}
+.bag button a:hover{
+    color: orange;
+}
+.btn:hover{
+    color: orange;
+}
+
+    
+
+#btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    border-radius: 0%; 
+    border: 1px solid rgb(255, 166, 0) !important; 
+    height: 4rem;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+#btn1:hover{
+    color: orange !important;
+    border-color: orange !important;
+}
+.btn2{
+    font-size: .8rem; 
+    border-radius: 0 0 0 0; 
+    font-family: sans-serif; 
+    color: black; 
+    border: 1px solid orange; 
+    background-color: white; 
+    margin-left: 8rem; 
+    height: 3.5rem; 
+    width: 13rem;
+}
+.btn2:hover{
+    color: orange;
+}
+.btn3{
+    
+    font-size: .8rem; 
+    border-radius: 0 0 0 0; 
+    font-family: sans-serif; 
+    color: white; 
+    border: 1px solid white; 
+    background-color:transparent;  
+    height: 3.5rem; 
+    width: 13rem;
+    margin-top: 2rem;
+
+}
+.btn3:hover{
+    color: orange;
+    border-color: orange;
+}
+.btn4{
+    margin-left: 1rem; 
+    border:1px solid #333; 
+    font-size: .8rem; 
+    width: 8rem;
+    height: 3rem;
+    font-family: sans-serif; 
+    color: black;
+    margin-top: .7rem;
+}
+.btn4:hover{
+    color: orange;
+    border-color: orange;
+}
+
+  /* <-- shopping-list page --> */
+
+.wrapper{
+    padding: 10px;
+}
+.box-area{
+ display: flex;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ grid-gap: 40px;
+ margin-top: 80px;
+ justify-content:space-evenly;
+}
+
+.box1{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    height: 22.8rem;
+    width: 20rem;
+}
+.box1 h2{
+    justify-content: center;
+    align-items: center;
+}
+.box1 img{
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+.overlays{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent,#1c1c1c 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.overlays h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 30%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: white;
+}
+.overlays p{
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+.box1:hover img{
+ transform: scale(1.2);
+ filter: brightness(10%);
+}
+.box1:hover .overlays{
+    height: 100%;
+}
+
+
+
+                                              /* <-- subscription-page --> */
+
+.container2{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}                                              
+.col-1{
+    flex-basis: 50%;
+    flex-grow: 1;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/tt.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: inherit;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: orange;
+
+}
+.col-1 ul{
+    list-style: none;
+    color: white;
+}
+.col-1 ul li{
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    
+}
+.col-1 ul li img{
+    width: 20px;
+    margin-right: 15px;
+}
+.col-2{
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+h2{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+}
+h2 img{
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 8rem;
+
+}
+form{
+    width: 400px;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 8rem;
+}
+label{
+    display: block;
+    padding: 25px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+    cursor: pointer;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.15);
+
+}
+label span{
+    flex: 1;
+    margin-left: 15px;
+    font-size: 34px;
+    font-weight: 500;
+    color: #333;
+}
+label span small{
+    font-size: 18px;
+}
+input[type='radio']:checked + span{
+    color: #ff004f;
+}
+
+input[type='text'],input[type='email']{
+    width: 100%;
+    background: transparent;
+    padding: 7px 10px;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin: 12px 0;
+}
+form button{
+    background-color: #ff004f;
+    color: #fff;
+    font-size: 16x;
+    padding: 12px 50px;
+    margin: 15px 0;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+form button:hover{
+    transform:translateY(-5px);
+};
+
+/* What Client Says Portion*/
+.testimonials-section{
+    padding: 0px 8%;
+    height: 100vh;
+    width: 100%;
+}
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
