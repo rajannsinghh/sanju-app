@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOKING WITH SANJU</title>
+    <link rel="shortcut icon" href="./icons8-cafe-50.png">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Macondo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container2">
+        <div class="col-1">
+         <H1 style="font-family: Allura; font-size: 80px;">Cooking With Sanju</H1>
+         <ul>
+            <li><img src="./images/down-chevron.png" alt=""> Schedule your private lesson with Sanju by 
+                reaching out through email or WhatsApp..</li>
+            <li><img src="./images/down-chevron.png" alt=""> Lessons will occur through WhatsApp video 
+                chat.</li>
+            <li><img src="./images/down-chevron.png" alt=""> Lesson time and date are decided mutually 
+                between chef and client.</li>
+            <li><img src="./images/down-chevron.png" alt=""> Please reach out if you need any guidance 
+                finding the proper ingredients for your dish.</li>
+           
+         </ul>
+        </div>
+        <div class="col-2">
+            <h2><img src="./images/down-chevron.png" alt="">Our Plans</h2>
+            <form>
+           
+                <label for="free">
+                    <input type="radio" name="plans" id="free">
+                        <span>Free Trial</span> 15 DAYS
+                </label>
+                <label for="paid">
+                <input type="radio" name="plans" id="paid">
+                <span>$1.5 <small>/month</small></span> NO LIMITS
+                </label>
+           
+                <p>YOUR NAME</p>
+                <input id="full-name" type="text" placeholder="Enter Your Name">&nbsp;
+                <p>EMAIL ADDRESS</p>
+                <input id="email-id" type="text" placeholder="Enter Your Email Id"> 
+                <button type="submit">Subscribe</button>  
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+
+         
+       const form = document.querySelector('form');
+       const subscription = localStorage.setItem('form', form)
+       ? JSON.parse(localStorage.getItem('form'))
+       : [];
+
+
+       const full_name = document.querySelector('#full-name');
+       const email_id = document.querySelector('#email-id');
+       const free_plan = document.querySelector('#free');
+       const paid_plan = document.querySelector('#paid')
+
+       
+
+       function addUser(plan){
+        subscription.push({
+            full_name : full_name.value,
+            email_id : email_id.value,
+            our_plans : our_plans,
+        });
+        localStorage.setItem('form', JSON.stringify(subscription));
+        full_name.value = '';
+        email_id.value = '';
+       }
+
+        // function myfunc(event){
+        //     event.preventDefault();
+
+        //     const full_name = document.getElementById('full_name').value;
+        //     const email_id = document.getElementById('email_id').value;
+        //     const our_plans = document.getElementById('our_plans');
+
+        //     our_plans.id ? free = 'free' : paid = 'paid';
+
+        //     localStorage.setItem('is_full_name', full_name);
+        //     localStorage.setItem('is_our_plans', our_plans);
+        //     localStorage.setItem('is_emai_id', email_id);
+        // }
+    </script>
+</body>
+</html>
